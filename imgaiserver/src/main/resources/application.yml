@@ -1,4 +1,13 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: imgai
+    password: imgainiubi
+    url: jdbc:mysql://120.53.245.68:3306/imgai?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
 server:
   port: 8081
-
-
+  compression:
+    enabled: true
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.fishpond.imgaiserver.model
