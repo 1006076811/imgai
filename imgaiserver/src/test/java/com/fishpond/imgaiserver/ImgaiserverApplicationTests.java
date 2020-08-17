@@ -1,10 +1,10 @@
-package com.fishpond.imgai;
+package com.fishpond.imgaiserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ImgaiApplicationTests {
+class ImgaiserverApplicationTests {
 
     @Test
     void contextLoads() {

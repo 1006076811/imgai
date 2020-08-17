@@ -1,13 +1,13 @@
-package com.fishpond.imgai;
+package com.fishpond.imgaiserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ImgaiApplication {
+public class ImgaiserverApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ImgaiApplication.class, args);
+        SpringApplication.run(ImgaiserverApplication.class, args);
     }
 
 }
