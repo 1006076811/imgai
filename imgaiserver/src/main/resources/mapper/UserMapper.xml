@@ -53,12 +53,12 @@
     <update id="updateUserSelectiveById" parameterType="User">
         update user
         <set>
-            <if test="username!=null">username=#{username}</if>
-            <if test="password!=null">password=#{password}</if>
-            <if test="name!=null">name=#{name}</if>
-            <if test="email!=null">email=#{email}</if>
-            <if test="phone!=null">phone=#{phone}</if>
-            <if test="enabled!=null">enabled=#{enabled}</if>
+            <if test="username!=null">username=#{username},</if>
+            <if test="password!=null">password=#{password},</if>
+            <if test="name!=null">name=#{name},</if>
+            <if test="email!=null">email=#{email},</if>
+            <if test="phone!=null">phone=#{phone},</if>
+            <if test="enabled!=null">enabled=#{enabled},</if>
         </set>
         where id=#{id};
     </update>

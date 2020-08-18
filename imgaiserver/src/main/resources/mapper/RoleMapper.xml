@@ -3,7 +3,34 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.fishpond.imgaiserver.mapper.RoleMapper">
-    <select id="getRoleById" resultType="Role" parameterType="int">
+    <resultMap id="BaseRoleMap" type="Role">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+        <result column="nameZh" property="nameZh" jdbcType="VARCHAR"/>
+    </resultMap>
+    <select id="getRoleById" resultMap="BaseRoleMap" parameterType="int">
         select * from role where id=#{id};
     </select>
+    <select id="getAllRoles" resultMap="BaseRoleMap">
+        select * from role;
+    </select>
+    <insert id="addRole" parameterType="Role">
+        insert into role (id,name,nameZh) values (#{id},#{name},#{nameZh});
+    </insert>
+    <delete id="removeRoleById" parameterType="int">
+        delete from role where id=#{id};
+    </delete>
+    <update id="updateRoleById" parameterType="Role">
+        update role
+        set name=#{name},nameZh=#{nameZh}
+        where id=#{id};
+    </update>
+    <update id="updateRoleSelectiveById" parameterType="Role">
+        update role
+        <set>
+            <if test="name!=null">name=#{name},</if>
+            <if test="name!=null">nameZh=#{nameZh},</if>
+        </set>
+        where id=#{id};
+    </update>
 </mapper>
