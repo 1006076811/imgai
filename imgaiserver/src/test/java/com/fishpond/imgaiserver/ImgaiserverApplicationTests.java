@@ -2,6 +2,7 @@ package com.fishpond.imgaiserver;
 
 import com.fishpond.imgaiserver.mapper.RoleMapper;
 import com.fishpond.imgaiserver.mapper.UserMapper;
+import com.fishpond.imgaiserver.mapper.UserRoleMapper;
 import com.fishpond.imgaiserver.model.Role;
 import com.fishpond.imgaiserver.model.User;
 import org.junit.jupiter.api.Test;
@@ -17,14 +18,14 @@ class ImgaiserverApplicationTests {
     UserMapper userMapper;
     @Autowired
     RoleMapper roleMapper;
-
+    @Autowired
+    UserRoleMapper userRoleMapper;
     @Test
     void contextLoads() {
-        Role role = new Role();
-        role.setId(4);
-        role.setName("hehe");
-        role.setNameZh("呵呵");
-        roleMapper.removeRoleById(4);
+        List<Role> rolesByUid = userRoleMapper.getRolesByUid(1);
+        for (Role role : rolesByUid) {
+            System.out.println(role);
+        }
     }
 
 }
