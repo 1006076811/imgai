@@ -20,6 +20,7 @@ public interface UserMapper {
     public List<User> getAllUser();
     //获取用户(有角色信息)
     public User getUserWithRolesByUid(@Param("id") int id);
+    public User getUserWithRolesByUsername(@Param("username")String username);
     public List<User> getAllUserWithRoles();
     //获取用户上传过的图片
     public List<Image> getImageByUid(@Param("uid") int uid);
