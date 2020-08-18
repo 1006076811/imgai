@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a91a1c45-2e5f-459a-a9e5-2003c02f2ef5" name="默认的" comment="添加了vuex,router,axios,element-ui">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_13_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_35.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_35.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_16_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jakarta_el_3_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_3_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_3_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_3_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_3_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_3_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_3_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_3_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_3_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_3_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_3_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_3_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_3_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_3_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_3_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_3_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_3_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_3_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_3_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_3_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_3_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_3_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_3_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_2_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_26.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgai.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/build/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/build/check-versions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/build/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/build/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/build/vue-loader.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/build/webpack.base.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/build/webpack.dev.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/build/webpack.prod.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/_async-validator@1.8.5@async-validator/node_modules/babel-runtime/node_modules/core-js/build/Gruntfile.ls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/_async-validator@1.8.5@async-validator/node_modules/babel-runtime/node_modules/core-js/build/build.ls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/_async-validator@1.8.5@async-validator/node_modules/babel-runtime/node_modules/core-js/build/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/_async-validator@1.8.5@async-validator/node_modules/babel-runtime/node_modules/core-js/build/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/_babel-runtime@6.26.0@babel-runtime/node_modules/core-js/build/Gruntfile.ls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/_babel-runtime@6.26.0@babel-runtime/node_modules/core-js/build/build.ls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/_babel-runtime@6.26.0@babel-runtime/node_modules/core-js/build/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/_babel-runtime@6.26.0@babel-runtime/node_modules/core-js/build/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/_core-js@2.6.11@core-js/build/Gruntfile.ls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/_core-js@2.6.11@core-js/build/build.ls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/_core-js@2.6.11@core-js/build/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/_core-js@2.6.11@core-js/build/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/_element-ui@2.13.2@element-ui/node_modules/async-validator/node_modules/babel-runtime/node_modules/core-js/build/Gruntfile.ls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/_element-ui@2.13.2@element-ui/node_modules/async-validator/node_modules/babel-runtime/node_modules/core-js/build/build.ls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/_element-ui@2.13.2@element-ui/node_modules/async-validator/node_modules/babel-runtime/node_modules/core-js/build/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/_element-ui@2.13.2@element-ui/node_modules/async-validator/node_modules/babel-runtime/node_modules/core-js/build/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/async-validator/node_modules/babel-runtime/node_modules/core-js/build/Gruntfile.ls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/async-validator/node_modules/babel-runtime/node_modules/core-js/build/build.ls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/async-validator/node_modules/babel-runtime/node_modules/core-js/build/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/async-validator/node_modules/babel-runtime/node_modules/core-js/build/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/clone/clone.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/core-js/build/Gruntfile.ls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/core-js/build/build.ls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/core-js/build/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/core-js/build/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/cuint/build/uint32.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/cuint/build/uint32.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/cuint/build/uint64.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/cuint/build/uint64.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/element-ui/node_modules/async-validator/node_modules/babel-runtime/node_modules/core-js/build/Gruntfile.ls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/element-ui/node_modules/async-validator/node_modules/babel-runtime/node_modules/core-js/build/build.ls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/element-ui/node_modules/async-validator/node_modules/babel-runtime/node_modules/core-js/build/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/element-ui/node_modules/async-validator/node_modules/babel-runtime/node_modules/core-js/build/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/timsort/build/timsort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/timsort/build/timsort.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/upath/build/code/upath.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/url-loader/node_modules/mime/build/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/url-loader/node_modules/mime/build/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/xxhashjs/build/xxhash.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/xxhashjs/build/xxhash.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiserver/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiserver/imgaiserver.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgaiserver/.gitignore" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\environment\apache-maven-3.6.1\maven-repo" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../environment/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\environment\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="delegateBuildToMaven" value="true" />
+  </component>
+  <component name="ProjectId" id="1gD7Cbhyw7TncDcPt906lHbupM7" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="新增" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../SpringBootStudy/vhr-study" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.ImgaiApplication">
+    <configuration name="ImgaiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="imgai" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fishpond.imgai.ImgaiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImgaiserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="imgaiserver" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fishpond.imgaiserver.ImgaiserverApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a91a1c45-2e5f-459a-a9e5-2003c02f2ef5" name="默认的" comment="" />
+      <created>1597637182828</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597637182828</updated>
+      <workItem from="1597637186243" duration="22000" />
+      <workItem from="1597650740055" duration="469000" />
+      <workItem from="1597651599263" duration="5058000" />
+      <workItem from="1597710361149" duration="3164000" />
+    </task>
+    <task id="LOCAL-00001" summary="重构了项目目录，imgaiserver为后端，imgaivue为前端">
+      <created>1597652701126</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597652701126</updated>
+    </task>
+    <task id="LOCAL-00002" summary="添加了vuex,router,axios,element-ui">
+      <created>1597656488499</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597656488499</updated>
+    </task>
+    <task id="LOCAL-00003" summary="把所有git过滤的文件全部推送上来了，包括插件">
+      <created>1597713549523</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1597713549523</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="重构了项目目录，imgaiserver为后端，imgaivue为前端" />
+    <MESSAGE value="添加了vuex,router,axios,element-ui" />
+    <MESSAGE value="把所有git过滤的文件全部推送上来了，包括插件" />
+    <option name="LAST_COMMIT_MESSAGE" value="把所有git过滤的文件全部推送上来了，包括插件" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1597712280370">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1597712280370" />
+    <state x="687" y="220" key="FileChooserDialogImpl" timestamp="1597710578470">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="687" y="220" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597710578470" />
+    <state x="452" y="192" key="Vcs.Push.Dialog.v2" timestamp="1597713120542">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="192" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597713120542" />
+    <state x="743" y="418" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597654017448">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="743" y="418" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597654017448" />
+    <state x="616" y="282" key="git4idea.merge.GitPullDialog" timestamp="1597656969926">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="282" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597656969926" />
+    <state x="651" y="129" key="new project wizard" timestamp="1597651945674">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="651" y="129" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1597651945674" />
+  </component>
+</project>
