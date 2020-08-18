@@ -2,12 +2,12 @@ package com.fishpond.imgaiserver.pojo;
 
 import java.io.Serializable;
 
-public class image implements Serializable {
+public class Image implements Serializable {
     private int id;
     private int imgUrl;
     private int imgSize;
 
-    public image() {
+    public Image() {
     }
 
     public int getId() {
