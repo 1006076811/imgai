@@ -2,9 +2,12 @@ package com.fishpond.imgaiserver;
 
 import com.fishpond.imgaiserver.mapper.RoleMapper;
 import com.fishpond.imgaiserver.mapper.UserMapper;
+import com.fishpond.imgaiserver.model.User;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import java.util.List;
 
 @SpringBootTest
 class ImgaiserverApplicationTests {
@@ -16,8 +19,7 @@ class ImgaiserverApplicationTests {
 
     @Test
     void contextLoads() {
-        System.out.println(userMapper.getUserById(1));
-        System.out.println(roleMapper.getRoleById(1));
+        userMapper.removeUserById(2);
     }
 
 }

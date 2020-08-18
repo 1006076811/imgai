@@ -20,6 +20,7 @@ public class User implements UserDetails {
     private List<Role> roles;
 
     public User() {
+        this.enabled=true;
     }
 
     @JsonIgnore
@@ -37,12 +38,12 @@ public class User implements UserDetails {
     @JsonIgnore
     @Override
     public String getPassword() {
-        return this.password.trim();
+        return this.password;
     }
 
     @Override
     public String getUsername() {
-        return this.username.trim();
+        return this.username;
     }
 
     @JsonIgnore
@@ -106,6 +107,18 @@ public class User implements UserDetails {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
+    }
+
+    public List<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<Role> roles) {
+        this.roles = roles;
     }
 
     @Override

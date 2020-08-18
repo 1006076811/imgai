@@ -14,13 +14,52 @@
     </resultMap>
     <resultMap id="UserWithRoles" type="User" extends="BaseResultMap">
         <collection property="roles" ofType="Role">
-            <id column="id" property="id" jdbcType="INTEGER"/>
-            <result column="name" property="name" jdbcType="VARCHAR"/>
-            <result column="nameZh" property="nameZh" jdbcType="VARCHAR"/>
+            <id column="rid" property="id" jdbcType="INTEGER"/>
+            <result column="rname" property="name" jdbcType="VARCHAR"/>
+            <result column="rnameZh" property="nameZh" jdbcType="VARCHAR"/>
         </collection>
     </resultMap>
 
     <select id="getUserById" resultMap="BaseResultMap" parameterType="int">
         select * from user where id=#{id};
     </select>
+    <select id="getAllUser" resultMap="BaseResultMap">
+        select * from user;
+    </select>
+    <select id="getUserWithRolesByUid" resultMap="UserWithRoles" parameterType="int">
+        SELECT u.*,
+        r.id as rid,r.`name` as rname,r.nameZh as rnameZh
+        from `user` u,role r,userRole ur
+        where u.id=ur.uid and ur.rid=r.id and u.id=#{id}
+    </select>
+    <select id="getAllUserWithRoles" resultMap="UserWithRoles">
+        SELECT u.*,
+        r.id as rid,r.`name` as rname,r.nameZh as rnameZh
+        from `user` u,role r,userRole ur
+        where u.id=ur.uid and ur.rid=r.id
+    </select>
+    <insert id="addUser" parameterType="User">
+        insert into user (id,username,password,name,email,phone,enabled)
+                values (#{id},#{username},#{password},#{name},#{email},#{phone},#{enabled});
+    </insert>
+    <delete id="removeUserById" parameterType="int">
+        delete from user where id=#{id};
+    </delete>
+    <update id="updateUserById" parameterType="User">
+        update user set username=#{username},password=#{password},
+                        name=#{name},email=#{email},phone=#{phone},enabled=#{enabled}
+        where id=#{id};
+    </update>
+    <update id="updateUserSelectiveById" parameterType="User">
+        update user
+        <set>
+            <if test="username!=null">username=#{username}</if>
+            <if test="password!=null">password=#{password}</if>
+            <if test="name!=null">name=#{name}</if>
+            <if test="email!=null">email=#{email}</if>
+            <if test="phone!=null">phone=#{phone}</if>
+            <if test="enabled!=null">enabled=#{enabled}</if>
+        </set>
+        where id=#{id};
+    </update>
 </mapper>

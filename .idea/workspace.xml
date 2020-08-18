@@ -20,23 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a91a1c45-2e5f-459a-a9e5-2003c02f2ef5" name="默认的" comment="添加了vuex,router,axios,element-ui">
-      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/mapper/NationMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/mapper/RoleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/resources/mapper/RoleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/ImgaiserverApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/ImgaiserverApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/model/test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/pojo/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/model/Image.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/pojo/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/model/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/pojo/MenuRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/model/MenuRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/pojo/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/model/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/pojo/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/model/UserRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/pojo/UserWithImg.java" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/model/UserWithImg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgaiserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiserver/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgaiserver/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiserver/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imgaiserver/src/test/java/com/fishpond/imgaiserver/ImgaiserverApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiserver/src/test/java/com/fishpond/imgaiserver/ImgaiserverApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +130,7 @@
       <workItem from="1597637186243" duration="22000" />
       <workItem from="1597650740055" duration="469000" />
       <workItem from="1597651599263" duration="5058000" />
-      <workItem from="1597710361149" duration="7676000" />
+      <workItem from="1597710361149" duration="10785000" />
     </task>
     <task id="LOCAL-00001" summary="重构了项目目录，imgaiserver为后端，imgaivue为前端">
       <created>1597652701126</created>
@@ -187,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597715457738</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="更新后端：&#10;新增了userMapper，但是查询中文乱码">
+      <created>1597718818797</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1597718818797</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,13 +205,14 @@
     <MESSAGE value="添加了vuex,router,axios,element-ui" />
     <MESSAGE value="把所有git过滤的文件全部推送上来了，包括插件" />
     <MESSAGE value="更新后端：&#10;新增了Image,Menu等实体类" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新后端：&#10;新增了Image,Menu等实体类" />
+    <MESSAGE value="更新后端：&#10;新增了userMapper，但是查询中文乱码" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新后端：&#10;新增了userMapper，但是查询中文乱码" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1597718424952">
+    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1597731292903">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1597718424952" />
+    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1597731292903" />
     <state x="624" y="210" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597718670910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -230,22 +225,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="687" y="220" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597710578470" />
-    <state width="1867" height="258" key="GridCell.Tab.0.bottom" timestamp="1597718640216">
+    <state width="1867" height="258" key="GridCell.Tab.0.bottom" timestamp="1597731589509">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="258" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597718640216" />
-    <state width="1867" height="258" key="GridCell.Tab.0.center" timestamp="1597718640216">
+    <state width="1867" height="258" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597731589509" />
+    <state width="1867" height="258" key="GridCell.Tab.0.center" timestamp="1597731589509">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="258" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597718640216" />
-    <state width="1867" height="258" key="GridCell.Tab.0.left" timestamp="1597718640216">
+    <state width="1867" height="258" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597731589509" />
+    <state width="1867" height="258" key="GridCell.Tab.0.left" timestamp="1597731589509">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="258" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597718640216" />
-    <state width="1867" height="258" key="GridCell.Tab.0.right" timestamp="1597718640216">
+    <state width="1867" height="258" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597731589509" />
+    <state width="1867" height="258" key="GridCell.Tab.0.right" timestamp="1597731589509">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="258" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597718640216" />
+    <state width="1867" height="258" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597731589509" />
     <state x="667" y="158" key="RollbackChangesDialog" timestamp="1597715503144">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -254,10 +249,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="347" y="78" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597717410193" />
-    <state x="490" y="142" width="1016" height="655" key="Vcs.Push.Dialog.v2" timestamp="1597715583868">
+    <state x="490" y="142" width="1016" height="655" key="Vcs.Push.Dialog.v2" timestamp="1597718832511">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="490" y="142" width="1016" height="655" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597715583868" />
+    <state x="490" y="142" width="1016" height="655" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597718832511" />
     <state x="743" y="418" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597654017448">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
