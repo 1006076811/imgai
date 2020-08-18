@@ -20,6 +20,10 @@
         </collection>
     </resultMap>
 
+    <select id="getImageByUid" resultType="Image" parameterType="int">
+        SELECT i.* from user u,image i,userWithImg ui
+        where u.id=ui.uid and i.id=ui.iid and u.id=#{uid}
+    </select>
     <select id="getUserById" resultMap="BaseResultMap" parameterType="int">
         select * from user where id=#{id};
     </select>

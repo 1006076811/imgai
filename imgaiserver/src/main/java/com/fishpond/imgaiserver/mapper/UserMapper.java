@@ -1,5 +1,6 @@
 package com.fishpond.imgaiserver.mapper;
 
+import com.fishpond.imgaiserver.model.Image;
 import com.fishpond.imgaiserver.model.Role;
 import com.fishpond.imgaiserver.model.User;
 import org.apache.ibatis.annotations.Param;
@@ -20,4 +21,6 @@ public interface UserMapper {
     //获取用户(有角色信息)
     public User getUserWithRolesByUid(@Param("id") int id);
     public List<User> getAllUserWithRoles();
+    //获取用户上传过的图片
+    public List<Image> getImageByUid(@Param("uid") int uid);
 }

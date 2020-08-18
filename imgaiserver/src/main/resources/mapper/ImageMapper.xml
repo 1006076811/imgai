@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fishpond.imgaiserver.mapper.ImageMapper">
+    <resultMap id="ImageResultMap" type="Image">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="imgUrl" property="imgUrl" jdbcType="VARCHAR"/>
+        <result column="imgSize" property="imgSize" jdbcType="DOUBLE"/>
+    </resultMap>
+    
+    <select id="getImageById" resultMap="ImageResultMap" parameterType="int">
+        select * from image where id=#{id};
+    </select>
+    <select id="getAllImage" resultMap="ImageResultMap">
+        select * from image;
+    </select>
+    <insert id="addImage" parameterType="Image">
+        insert into image (id,imgUrl,imgSize) values (#{id},#{imgUrl},#{imgSize});
+    </insert>
+    <delete id="removeImageById" parameterType="int">
+        delete from image where id=#{id};
+    </delete>
+    <update id="updateImageById" parameterType="Image">
+        update image
+        set imgUrl={imgUrl},imgSize=#{imgSize}
+        where id=#{id};
+    </update>
+    <update id="updateImageSelectiveById" parameterType="Image">
+        update image
+        <set>
+            <if test="imgUrl!=null">imgUrl=#{imgUrl}</if>
+            <if test="imgSize!=null">imgSize=#{imgSize}</if>
+        </set>
+        where id=#{id};
+    </update>
+</mapper>

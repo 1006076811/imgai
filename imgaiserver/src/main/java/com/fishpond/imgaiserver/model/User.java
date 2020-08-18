@@ -18,6 +18,7 @@ public class User implements UserDetails {
     private String phone;
     private boolean enabled;
     private List<Role> roles;
+    private List<Image> images;
 
     public User() {
         this.enabled=true;
@@ -121,6 +122,14 @@ public class User implements UserDetails {
         this.roles = roles;
     }
 
+    public List<Image> getImages() {
+        return images;
+    }
+
+    public void setImages(List<Image> images) {
+        this.images = images;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -132,6 +141,7 @@ public class User implements UserDetails {
                 ", phone='" + phone + '\'' +
                 ", enabled=" + enabled +
                 ", roles=" + roles +
+                ", images=" + images +
                 '}';
     }
 }

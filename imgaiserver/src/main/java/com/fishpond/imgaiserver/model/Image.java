@@ -4,8 +4,8 @@ import java.io.Serializable;
 
 public class Image implements Serializable {
     private int id;
-    private int imgUrl;
-    private int imgSize;
+    private String imgUrl;
+    private Double imgSize;
 
     public Image() {
     }
@@ -18,19 +18,19 @@ public class Image implements Serializable {
         this.id = id;
     }
 
-    public int getImgUrl() {
+    public String getImgUrl() {
         return imgUrl;
     }
 
-    public void setImgUrl(int imgUrl) {
+    public void setImgUrl(String imgUrl) {
         this.imgUrl = imgUrl;
     }
 
-    public int getImgSize() {
+    public Double getImgSize() {
         return imgSize;
     }
 
-    public void setImgSize(int imgSize) {
+    public void setImgSize(Double imgSize) {
         this.imgSize = imgSize;
     }
 
