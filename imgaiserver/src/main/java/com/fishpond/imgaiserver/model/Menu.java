@@ -1,4 +1,4 @@
-package com.fishpond.imgaiserver.pojo;
+package com.fishpond.imgaiserver.model;
 
 import java.io.Serializable;
 

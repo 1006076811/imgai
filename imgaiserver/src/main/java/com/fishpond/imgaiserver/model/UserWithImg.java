@@ -1,13 +1,13 @@
-package com.fishpond.imgaiserver.pojo;
+package com.fishpond.imgaiserver.model;
 
 import java.io.Serializable;
 
-public class UserRole implements Serializable {
+public class UserWithImg implements Serializable {
     private int id;
     private int uid;
-    private int rid;
+    private int iid;
 
-    public UserRole() {
+    public UserWithImg() {
     }
 
     public int getId() {
@@ -26,20 +26,20 @@ public class UserRole implements Serializable {
         this.uid = uid;
     }
 
-    public int getRid() {
-        return rid;
+    public int getIid() {
+        return iid;
     }
 
-    public void setRid(int rid) {
-        this.rid = rid;
+    public void setIid(int iid) {
+        this.iid = iid;
     }
 
     @Override
     public String toString() {
-        return "UserRole{" +
+        return "userWithImg{" +
                 "id=" + id +
                 ", uid=" + uid +
-                ", rid=" + rid +
+                ", iid=" + iid +
                 '}';
     }
 }

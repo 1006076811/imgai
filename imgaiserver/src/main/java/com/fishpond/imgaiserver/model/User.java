@@ -1,4 +1,4 @@
-package com.fishpond.imgaiserver.pojo;
+package com.fishpond.imgaiserver.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.security.core.GrantedAuthority;
