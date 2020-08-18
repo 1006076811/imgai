@@ -11,4 +11,16 @@
         select r.* from user u,role r,userRole ur
         where u.id=ur.uid and r.id=ur.rid and u.id=#{uid}
     </select>
+    <insert id="addUserRole" parameterType="UserRole">
+        insert into userRole (id,uid,rid) values (#{id},#{uid},#{rid});
+    </insert>
+    <delete id="removeUserRoleByUid" parameterType="int">
+        delete from userRole where uid=#{uid};
+    </delete>
+    <delete id="removeUserRoleByRid" parameterType="int">
+        delete from userRole where rid=#{rid};
+    </delete>
+    <delete id="removeUserRoleByUidAndRid">
+        delete from userRole where uid=#{uid} and rid=#{rid}
+    </delete>
 </mapper>

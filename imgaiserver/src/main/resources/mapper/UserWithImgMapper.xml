@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fishpond.imgaiserver.mapper.UserWithImgMapper">
+    <select id="getImageByUid" resultType="Image" parameterType="int">
+        select i.* from user u,image i,userWithImg ui
+        where u.id=ui.uid and i.id=ui.iid and u.id=#{uid};
+    </select>
+    <insert id="addUserWithImage" parameterType="UserWithImg">
+        insert into userWithImg (id,uid,iid) values (#{id},#{uid},#{iid});
+    </insert>
+    <delete id="removeUserWithImageByUid" parameterType="int">
+        delete from userWithImg where uid=#{uid};
+    </delete>
+    <delete id="removeUserWithImageByIid" parameterType="int">
+        delete from userWithImg where iid=#{iid};
+    </delete>
+</mapper>
