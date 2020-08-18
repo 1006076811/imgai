@@ -1,6 +1,8 @@
 <template>
   <div>
-    <div class="background"></div>
+    <div class="background">
+      <img :src="imgSrc" width="100%" height="100%" alt="" />
+    </div>
    <div class="div1">
         <el-row class="l_row">
           <label>登录</label>
@@ -32,9 +34,10 @@
 
 <script>
   export default {
-
     data(){
       return{
+        //引入背景图
+        imgSrc:require('../assets/img/l_back.jpg'),
         //表单数据
         LoginForm:{
           username:"admin",
@@ -73,13 +76,21 @@
 </script>
 
 <style scoped>
+  .background{
+    width:100%;
+    height:100%;  /**宽高100%是为了图片铺满屏幕 */
+    z-index:-1;
+    position: absolute;
+  }
   .div1{
+    z-index:1;
+    position: absolute;
     height: 400px;
     width: 25%;
     margin-left:65%;
     margin-top: 10%;
-    background-color: #fcfcfc;
-    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    background-color: #557f93;
+    box-shadow: 0 2px 12px 0 rgba(238, 231, 231, 0.09);
   }
   .l_row{
     padding-top: 20px;
