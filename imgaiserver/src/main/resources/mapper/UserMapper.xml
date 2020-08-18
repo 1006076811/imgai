@@ -20,6 +20,12 @@
         </collection>
     </resultMap>
 
+    <select id="getUserWithRolesByUsername" resultMap="UserWithRoles">
+        SELECT u.*,
+        r.id as rid,r.`name` as rname,r.nameZh as rnameZh
+        from `user` u,role r,userRole ur
+        where u.id=ur.uid and ur.rid=r.id and u.username=#{username}
+    </select>
     <select id="getImageByUid" resultType="Image" parameterType="int">
         SELECT i.* from user u,image i,userWithImg ui
         where u.id=ui.uid and i.id=ui.iid and u.id=#{uid}

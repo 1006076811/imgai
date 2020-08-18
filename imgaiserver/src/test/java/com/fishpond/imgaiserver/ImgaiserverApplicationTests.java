@@ -26,9 +26,9 @@ class ImgaiserverApplicationTests {
     ImageMapper imageMapper;
     @Test
     void contextLoads() {
-        List<Image> allImage = imageMapper.getAllImage();
-        for (Image image : allImage) {
-            System.out.println(image);
+        List<Role> rolesByUid = userRoleMapper.getRolesByUid(1);
+        for (Role role : rolesByUid) {
+            System.out.println(role);
         }
     }
 
