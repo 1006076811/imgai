@@ -1,6 +1,7 @@
 package com.fishpond.imgaiserver.model;
 
 import java.io.Serializable;
+import java.util.List;
 
 public class Menu implements Serializable {
     private int id;
@@ -11,6 +12,8 @@ public class Menu implements Serializable {
     private String iconCls;
     private int parentId;
     private Boolean enabled;
+    private List<Menu> children;
+    private List<Role> roles;
 
     public Menu() {
     }
@@ -79,6 +82,22 @@ public class Menu implements Serializable {
         this.enabled = enabled;
     }
 
+    public List<Menu> getChildren() {
+        return children;
+    }
+
+    public void setChildren(List<Menu> children) {
+        this.children = children;
+    }
+
+    public List<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<Role> roles) {
+        this.roles = roles;
+    }
+
     @Override
     public String toString() {
         return "Menu{" +
@@ -90,6 +109,8 @@ public class Menu implements Serializable {
                 ", iconCls='" + iconCls + '\'' +
                 ", parentId=" + parentId +
                 ", enabled=" + enabled +
+                ", children=" + children +
+                ", roles=" + roles +
                 '}';
     }
 }

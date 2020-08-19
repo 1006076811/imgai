@@ -80,6 +80,7 @@ public class User implements UserDetails {
 
     public void setUsername(String username) {
         this.username = username;
+        this.name = username;
     }
 
     public void setPassword(String password) {
@@ -91,6 +92,9 @@ public class User implements UserDetails {
     }
 
     public void setName(String name) {
+        if(this.name==null || "".equals(this.name)){
+            this.name=username;
+        }
         this.name = name;
     }
 

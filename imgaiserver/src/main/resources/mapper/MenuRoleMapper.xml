@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fishpond.imgaiserver.mapper.MenuRoleMapper">
+    <select id="getMidsByRid" resultType="int">
+        SELECT mr.mid from menuRole mr
+        where mr.rid=#{rid}
+    </select>
+    <select id="getRidsByMid" resultType="int">
+        select mr.rid from menuRole mr
+        where mr.mid=#{mid};
+    </select>
+    <insert id="addMenuRole" parameterType="MenuRole">
+        insert into menuRole (id,mid,rid) values (#{id},#{mid},#{rid});
+    </insert>
+    <delete id="deleteMenuRoleByMid">
+        delete from menuRole where mid=#{mid};
+    </delete>
+    <delete id="deleteMenuRoleByMidAndRid">
+        delete from menuRole where mid=#{mid} and rid=#{rid}
+    </delete>
+</mapper>
