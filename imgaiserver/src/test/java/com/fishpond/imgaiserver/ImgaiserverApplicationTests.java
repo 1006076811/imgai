@@ -1,10 +1,8 @@
 package com.fishpond.imgaiserver;
 
-import com.fishpond.imgaiserver.mapper.ImageMapper;
-import com.fishpond.imgaiserver.mapper.RoleMapper;
-import com.fishpond.imgaiserver.mapper.UserMapper;
-import com.fishpond.imgaiserver.mapper.UserRoleMapper;
+import com.fishpond.imgaiserver.mapper.*;
 import com.fishpond.imgaiserver.model.Image;
+import com.fishpond.imgaiserver.model.Menu;
 import com.fishpond.imgaiserver.model.Role;
 import com.fishpond.imgaiserver.model.User;
 import org.junit.jupiter.api.Test;
@@ -24,11 +22,13 @@ class ImgaiserverApplicationTests {
     UserRoleMapper userRoleMapper;
     @Autowired
     ImageMapper imageMapper;
+    @Autowired
+    MenuMapper menuMapper;
     @Test
     void contextLoads() {
-        List<Role> rolesByUid = userRoleMapper.getRolesByUid(1);
-        for (Role role : rolesByUid) {
-            System.out.println(role);
+        List<Menu> allMenusWithRole = menuMapper.getAllMenusWithRole();
+        for (Menu menu : allMenusWithRole) {
+            System.out.println(menu);
         }
     }
 

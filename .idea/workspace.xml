@@ -19,15 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a91a1c45-2e5f-459a-a9e5-2003c02f2ef5" name="默认的" comment="更新后端:&#10;健全了User和Image、Role的关联">
-      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/service/ImageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/service/RoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/service/UserRoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/service/UserWithImgService.java" afterDir="false" />
+    <list default="true" id="a91a1c45-2e5f-459a-a9e5-2003c02f2ef5" name="默认的" comment="更新后端:&#10;更新了Mapper对应的Service">
+      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/mapper/MenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/mapper/MenuRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/service/MenuRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/service/MenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/resources/mapper/MenuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/resources/mapper/MenuRoleMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgaiserver/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiserver/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/model/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/model/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imgaiserver/src/test/java/com/fishpond/imgaiserver/ImgaiserverApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiserver/src/test/java/com/fishpond/imgaiserver/ImgaiserverApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +135,7 @@
       <workItem from="1597637186243" duration="22000" />
       <workItem from="1597650740055" duration="469000" />
       <workItem from="1597651599263" duration="5058000" />
-      <workItem from="1597710361149" duration="19275000" />
+      <workItem from="1597710361149" duration="27010000" />
     </task>
     <task id="LOCAL-00001" summary="重构了项目目录，imgaiserver为后端，imgaivue为前端">
       <created>1597652701126</created>
@@ -220,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597737786668</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="更新后端:&#10;更新了Mapper对应的Service">
+      <created>1597741568815</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1597741568815</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,13 +258,14 @@
     <MESSAGE value="更新后端:&#10;新增UserRoleMapper的查询方法" />
     <MESSAGE value="更新后端:&#10;新增ImageMapper的查询方法，新增UserMapper获取用户上传历史图片的方法" />
     <MESSAGE value="更新后端:&#10;健全了User和Image、Role的关联" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新后端:&#10;健全了User和Image、Role的关联" />
+    <MESSAGE value="更新后端:&#10;更新了Mapper对应的Service" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新后端:&#10;更新了Mapper对应的Service" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1597739834112">
+    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1597796924456">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1597739834112" />
+    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1597796924456" />
     <state x="624" y="210" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597718670910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -273,22 +282,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="0" key="FileDocumentManager.FileCacheConflict/0.0.1920.1040@0.0.1920.1040" timestamp="1597740618227" />
-    <state width="1867" height="258" key="GridCell.Tab.0.bottom" timestamp="1597740466597">
+    <state width="1867" height="258" key="GridCell.Tab.0.bottom" timestamp="1597800007684">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="258" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597740466597" />
-    <state width="1867" height="258" key="GridCell.Tab.0.center" timestamp="1597740466597">
+    <state width="1867" height="258" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597800007684" />
+    <state width="1867" height="258" key="GridCell.Tab.0.center" timestamp="1597800007684">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="258" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597740466597" />
-    <state width="1867" height="258" key="GridCell.Tab.0.left" timestamp="1597740466597">
+    <state width="1867" height="258" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597800007684" />
+    <state width="1867" height="258" key="GridCell.Tab.0.left" timestamp="1597800007684">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="258" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597740466597" />
-    <state width="1867" height="258" key="GridCell.Tab.0.right" timestamp="1597740466597">
+    <state width="1867" height="258" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597800007684" />
+    <state width="1867" height="258" key="GridCell.Tab.0.right" timestamp="1597800007684">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="258" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597740466597" />
+    <state width="1867" height="258" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597800007684" />
     <state x="667" y="158" key="RollbackChangesDialog" timestamp="1597715503144">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -297,18 +306,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="347" y="78" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597717410193" />
-    <state x="490" y="142" width="1016" height="655" key="Vcs.Push.Dialog.v2" timestamp="1597737805348">
+    <state x="490" y="142" width="1016" height="655" key="Vcs.Push.Dialog.v2" timestamp="1597741627327">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="490" y="142" width="1016" height="655" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597737805348" />
+    <state x="490" y="142" width="1016" height="655" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597741627327" />
     <state x="743" y="418" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597654017448">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="743" y="418" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597654017448" />
-    <state x="616" y="282" key="git4idea.merge.GitPullDialog" timestamp="1597656969926">
+    <state x="616" y="282" key="git4idea.merge.GitPullDialog" timestamp="1597799470791">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="282" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597656969926" />
+    <state x="616" y="282" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597799470791" />
     <state x="651" y="129" key="new project wizard" timestamp="1597651945674">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
