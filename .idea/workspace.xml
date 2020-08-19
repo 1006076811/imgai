@@ -19,17 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a91a1c45-2e5f-459a-a9e5-2003c02f2ef5" name="默认的" comment="更新后端:&#10;更新了Mapper对应的Service">
-      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/mapper/MenuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/mapper/MenuRoleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/service/MenuRoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/service/MenuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/resources/mapper/MenuMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/resources/mapper/MenuRoleMapper.xml" afterDir="false" />
+    <list default="true" id="a91a1c45-2e5f-459a-a9e5-2003c02f2ef5" name="默认的" comment="更新后端:&#10;更新了Menu和MenuRole对应的Mapper和Service,&#10;若用户未设置name，则name自动初始化为username">
+      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/config/LoginFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/utils/RespBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/model/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/model/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgaiserver/src/test/java/com/fishpond/imgaiserver/ImgaiserverApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiserver/src/test/java/com/fishpond/imgaiserver/ImgaiserverApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/js-yaml/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/js-yaml/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgaiVue/imgaiVue/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgaiVue/imgaiVue/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,15 +74,19 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../SpringBootStudy/vhr-study" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../SpringBootStudy/bootkmybatis" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
-  <component name="RunManager" selected="JUnit.ImgaiserverApplicationTests.contextLoads">
+  <component name="RunManager" selected="Spring Boot.ImgaiserverApplication">
     <configuration name="ImgaiserverApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="imgaiserver" />
       <extension name="coverage">
@@ -135,7 +136,7 @@
       <workItem from="1597637186243" duration="22000" />
       <workItem from="1597650740055" duration="469000" />
       <workItem from="1597651599263" duration="5058000" />
-      <workItem from="1597710361149" duration="27010000" />
+      <workItem from="1597710361149" duration="36613000" />
     </task>
     <task id="LOCAL-00001" summary="重构了项目目录，imgaiserver为后端，imgaivue为前端">
       <created>1597652701126</created>
@@ -228,7 +229,21 @@
       <option name="project" value="LOCAL" />
       <updated>1597741568815</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="更新后端:&#10;更新了Menu和MenuRole对应的Mapper和Service,&#10;若用户未设置name，则name自动初始化为username">
+      <created>1597803787951</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1597803787951</updated>
+    </task>
+    <task id="LOCAL-00015" summary="更新后端:&#10;更新了Menu和MenuRole对应的Mapper和Service,&#10;若用户未设置name，则name自动初始化为username">
+      <created>1597803815744</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1597803815744</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,13 +274,14 @@
     <MESSAGE value="更新后端:&#10;新增ImageMapper的查询方法，新增UserMapper获取用户上传历史图片的方法" />
     <MESSAGE value="更新后端:&#10;健全了User和Image、Role的关联" />
     <MESSAGE value="更新后端:&#10;更新了Mapper对应的Service" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新后端:&#10;更新了Mapper对应的Service" />
+    <MESSAGE value="更新后端:&#10;更新了Menu和MenuRole对应的Mapper和Service,&#10;若用户未设置name，则name自动初始化为username" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新后端:&#10;更新了Menu和MenuRole对应的Mapper和Service,&#10;若用户未设置name，则name自动初始化为username" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1597796924456">
+    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1597826871151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1597796924456" />
+    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1597826871151" />
     <state x="624" y="210" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597718670910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -274,30 +290,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597715507901" />
-    <state x="687" y="220" key="FileChooserDialogImpl" timestamp="1597710578470">
+    <state x="687" y="220" key="FileChooserDialogImpl" timestamp="1597828631921">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="687" y="220" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597710578470" />
+    <state x="687" y="220" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597828631921" />
     <state x="0" y="0" key="FileDocumentManager.FileCacheConflict" timestamp="1597740618227">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="0" key="FileDocumentManager.FileCacheConflict/0.0.1920.1040@0.0.1920.1040" timestamp="1597740618227" />
-    <state width="1867" height="258" key="GridCell.Tab.0.bottom" timestamp="1597800007684">
+    <state width="1867" height="258" key="GridCell.Tab.0.bottom" timestamp="1597829577353">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="258" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597800007684" />
-    <state width="1867" height="258" key="GridCell.Tab.0.center" timestamp="1597800007684">
+    <state width="1867" height="258" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597829577353" />
+    <state width="1867" height="258" key="GridCell.Tab.0.center" timestamp="1597829577353">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="258" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597800007684" />
-    <state width="1867" height="258" key="GridCell.Tab.0.left" timestamp="1597800007684">
+    <state width="1867" height="258" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597829577353" />
+    <state width="1867" height="258" key="GridCell.Tab.0.left" timestamp="1597829577353">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="258" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597800007684" />
-    <state width="1867" height="258" key="GridCell.Tab.0.right" timestamp="1597800007684">
+    <state width="1867" height="258" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597829577353" />
+    <state width="1867" height="258" key="GridCell.Tab.0.right" timestamp="1597829577353">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="258" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597800007684" />
+    <state width="1867" height="258" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597829577353" />
+    <state width="1867" height="258" key="GridCell.Tab.1.bottom" timestamp="1597829577353">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="258" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597829577353" />
+    <state width="1867" height="258" key="GridCell.Tab.1.center" timestamp="1597829577353">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="258" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597829577353" />
+    <state width="1867" height="258" key="GridCell.Tab.1.left" timestamp="1597829577353">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="258" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597829577353" />
+    <state width="1867" height="258" key="GridCell.Tab.1.right" timestamp="1597829577353">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="258" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597829577353" />
+    <state x="290" y="85" key="MergeDialog" timestamp="1597804074379">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="290" y="85" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597804074379" />
+    <state x="820" y="363" width="491" height="313" key="MultipleFileMergeDialog" timestamp="1597804076412">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="820" y="363" width="491" height="313" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597804076412" />
     <state x="667" y="158" key="RollbackChangesDialog" timestamp="1597715503144">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -306,18 +346,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="347" y="78" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597717410193" />
-    <state x="490" y="142" width="1016" height="655" key="Vcs.Push.Dialog.v2" timestamp="1597741627327">
+    <state x="490" y="142" width="1016" height="655" key="Vcs.Push.Dialog.v2" timestamp="1597804110710">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="490" y="142" width="1016" height="655" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597741627327" />
-    <state x="743" y="418" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597654017448">
+    <state x="490" y="142" width="1016" height="655" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597804110710" />
+    <state x="743" y="418" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597804255976">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="743" y="418" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597654017448" />
-    <state x="616" y="282" key="git4idea.merge.GitPullDialog" timestamp="1597799470791">
+    <state x="743" y="418" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597804255976" />
+    <state x="616" y="282" key="git4idea.merge.GitPullDialog" timestamp="1597804128502">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="282" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597799470791" />
+    <state x="616" y="282" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597804128502" />
     <state x="651" y="129" key="new project wizard" timestamp="1597651945674">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
