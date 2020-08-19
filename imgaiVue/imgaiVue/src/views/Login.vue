@@ -10,15 +10,15 @@
         <el-form ref="loginFormRef" :rules="loginRules" :model="LoginForm" class="login_form" label-width="0">
           <!--用户名-->
           <el-form-item prop="username">
-            <el-input v-model="LoginForm.username"></el-input>
+            <el-input v-model="LoginForm.username" prefix-icon="iconfont icon-ziyuanxhdpi" placeholder="请输入你的用户名"></el-input>
           </el-form-item>
           <!--密码-->
           <el-form-item prop="password">
-            <el-input v-model="LoginForm.password"  type="password"></el-input>
+            <el-input v-model="LoginForm.password" prefix-icon="iconfont icon-mima" placeholder="请输入你的密码"  type="password"></el-input>
           </el-form-item>
           <!--验证码-->
           <el-form-item prop="code">
-            <el-input v-model="LoginForm.code"></el-input>
+            <el-input v-model="LoginForm.code" prefix-icon="iconfont icon-yanzhengma" placeholder="请输入验证码"></el-input>
           </el-form-item>
           <!--按钮-->
           <el-form-item class="btns">
@@ -40,8 +40,8 @@
         imgSrc:require('../assets/img/l_back.jpg'),
         //表单数据
         LoginForm:{
-          username:"admin",
-          password:"123456",
+          username:"",
+          password:"",
           code:""
         },
         //验证对象
@@ -89,7 +89,7 @@
     width: 25%;
     margin-left:65%;
     margin-top: 10%;
-    background-color: #557f93;
+    background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 2px 12px 0 rgba(238, 231, 231, 0.09);
   }
   .l_row{

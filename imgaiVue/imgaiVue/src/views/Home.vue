@@ -1,4 +1,5 @@
 <template>
+
     <el-row>
       <el-button type="primary" @click="tologin()" >登录</el-button>
       <el-button type="info" @click="toregister()">注册</el-button>
@@ -7,6 +8,10 @@
 
 <script>
     export default {
+      data(){
+        return {
+        }
+      },
       methods:{
         tologin(){
           this.$router.push({path:"/login"});
