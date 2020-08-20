@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.BadCredentialsException;
+import org.springframework.security.authentication.InsufficientAuthenticationException;
 import org.springframework.security.authentication.LockedException;
 import org.springframework.security.config.annotation.ObjectPostProcessor;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -20,10 +21,12 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.session.SessionRegistryImpl;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.security.web.access.intercept.FilterSecurityInterceptor;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.security.web.authentication.logout.LogoutSuccessHandler;
 import org.springframework.security.web.authentication.session.ConcurrentSessionControlAuthenticationStrategy;
 import org.springframework.security.web.session.ConcurrentSessionFilter;
 import org.springframework.security.web.session.SessionInformationExpiredEvent;
@@ -128,10 +131,37 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             }
         })
                 .and()
-                .logout().logoutUrl("/logout").permitAll()
+                .logout().logoutUrl("/logout")
+                .logoutSuccessHandler(new LogoutSuccessHandler() {
+                    @Override
+                    public void onLogoutSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
+                        response.setContentType("application/json;charset=utf-8");
+                        PrintWriter out = response.getWriter();
+                        out.write(new ObjectMapper().writeValueAsString(RespBean.ok("注销成功")));
+                        out.flush();
+                        out.close();
+                    }
+                })
+                .permitAll()
                 .and()
-                .csrf().disable();
-
+                .csrf().disable().exceptionHandling()
+                //没有认证的时候，在这里处理结果，没有重定向
+                .authenticationEntryPoint(new AuthenticationEntryPoint() {
+                    @Override
+                    public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException authException) throws IOException, ServletException {
+                        response.setContentType("application/json;charset=utf-8");
+                        response.setStatus(401);
+                        PrintWriter out = response.getWriter();
+                        RespBean respBean = null;
+                        if(authException instanceof InsufficientAuthenticationException){
+                            System.out.println("没有访问权限，请联系管理员");
+                            respBean = RespBean.error(401,"没有访问权限，请联系管理员",null);
+                        }
+                        out.write(new ObjectMapper().writeValueAsString(respBean));
+                        out.flush();
+                        out.close();
+                    }
+                });
         //将session策略添加进去
         http.addFilterAt(new ConcurrentSessionFilter(sessionRegistry(), new SessionInformationExpiredStrategy() {
             @Override

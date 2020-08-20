@@ -20,11 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a91a1c45-2e5f-459a-a9e5-2003c02f2ef5" name="默认的" comment="更新后端:&#10;更新了Menu和MenuRole对应的Mapper和Service,&#10;若用户未设置name，则name自动初始化为username">
-      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/config/CustomFilterInvocationSecurityMataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/config/CustomUrlDecisionManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgaiserver/src/test/java/com/fishpond/imgaiserver/ImgaiserverApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiserver/src/test/java/com/fishpond/imgaiserver/ImgaiserverApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +132,7 @@
       <workItem from="1597650740055" duration="469000" />
       <workItem from="1597651599263" duration="5058000" />
       <workItem from="1597710361149" duration="37878000" />
-      <workItem from="1597884095879" duration="8561000" />
+      <workItem from="1597884095879" duration="8869000" />
     </task>
     <task id="LOCAL-00001" summary="重构了项目目录，imgaiserver为后端，imgaivue为前端">
       <created>1597652701126</created>
@@ -249,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597829878537</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="更新后端:&#10;新增url动态权限处理，处理了允许匿名访问和url和高级会员才可以访问的url">
+      <created>1597892840999</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1597892840999</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +286,8 @@
     <MESSAGE value="更新后端:&#10;更新了Mapper对应的Service" />
     <MESSAGE value="更新后端:&#10;更新了Menu和MenuRole对应的Mapper和Service,&#10;若用户未设置name，则name自动初始化为username" />
     <MESSAGE value="更新后端:&#10;更新了登录功能,自定义登录验证，以json的方式登录" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新后端:&#10;更新了登录功能,自定义登录验证，以json的方式登录" />
+    <MESSAGE value="更新后端:&#10;新增url动态权限处理，处理了允许匿名访问和url和高级会员才可以访问的url" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新后端:&#10;新增url动态权限处理，处理了允许匿名访问和url和高级会员才可以访问的url" />
   </component>
   <component name="WindowStateProjectService">
     <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1597892374770">
