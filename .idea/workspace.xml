@@ -20,13 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a91a1c45-2e5f-459a-a9e5-2003c02f2ef5" name="默认的" comment="更新后端:&#10;更新了Menu和MenuRole对应的Mapper和Service,&#10;若用户未设置name，则name自动初始化为username">
-      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/config/LoginFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/utils/RespBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/config/CustomFilterInvocationSecurityMataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/config/CustomUrlDecisionManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/js-yaml/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/node_modules/js-yaml/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgaiVue/imgaiVue/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgaiVue/imgaiVue/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgaiserver/src/test/java/com/fishpond/imgaiserver/ImgaiserverApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiserver/src/test/java/com/fishpond/imgaiserver/ImgaiserverApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +80,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../SpringBootStudy/bootkmybatis" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
@@ -136,7 +134,8 @@
       <workItem from="1597637186243" duration="22000" />
       <workItem from="1597650740055" duration="469000" />
       <workItem from="1597651599263" duration="5058000" />
-      <workItem from="1597710361149" duration="36613000" />
+      <workItem from="1597710361149" duration="37878000" />
+      <workItem from="1597884095879" duration="8561000" />
     </task>
     <task id="LOCAL-00001" summary="重构了项目目录，imgaiserver为后端，imgaivue为前端">
       <created>1597652701126</created>
@@ -243,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597803815744</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="更新后端:&#10;更新了登录功能,自定义登录验证，以json的方式登录">
+      <created>1597829878537</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1597829878537</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,13 +281,14 @@
     <MESSAGE value="更新后端:&#10;健全了User和Image、Role的关联" />
     <MESSAGE value="更新后端:&#10;更新了Mapper对应的Service" />
     <MESSAGE value="更新后端:&#10;更新了Menu和MenuRole对应的Mapper和Service,&#10;若用户未设置name，则name自动初始化为username" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新后端:&#10;更新了Menu和MenuRole对应的Mapper和Service,&#10;若用户未设置name，则name自动初始化为username" />
+    <MESSAGE value="更新后端:&#10;更新了登录功能,自定义登录验证，以json的方式登录" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新后端:&#10;更新了登录功能,自定义登录验证，以json的方式登录" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1597826871151">
+    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1597892374770">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1597826871151" />
+    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1597892374770" />
     <state x="624" y="210" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597718670910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -298,46 +305,62 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="0" key="FileDocumentManager.FileCacheConflict/0.0.1920.1040@0.0.1920.1040" timestamp="1597740618227" />
-    <state width="1867" height="258" key="GridCell.Tab.0.bottom" timestamp="1597829577353">
+    <state width="1867" height="258" key="GridCell.Tab.0.bottom" timestamp="1597892496573">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="258" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597829577353" />
-    <state width="1867" height="258" key="GridCell.Tab.0.center" timestamp="1597829577353">
+    <state width="1867" height="258" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597892496573" />
+    <state width="1867" height="258" key="GridCell.Tab.0.center" timestamp="1597892496573">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="258" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597829577353" />
-    <state width="1867" height="258" key="GridCell.Tab.0.left" timestamp="1597829577353">
+    <state width="1867" height="258" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597892496573" />
+    <state width="1867" height="258" key="GridCell.Tab.0.left" timestamp="1597892496572">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="258" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597829577353" />
-    <state width="1867" height="258" key="GridCell.Tab.0.right" timestamp="1597829577353">
+    <state width="1867" height="258" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597892496572" />
+    <state width="1867" height="258" key="GridCell.Tab.0.right" timestamp="1597892496573">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="258" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597829577353" />
-    <state width="1867" height="258" key="GridCell.Tab.1.bottom" timestamp="1597829577353">
+    <state width="1867" height="258" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597892496573" />
+    <state width="1867" height="258" key="GridCell.Tab.1.bottom" timestamp="1597892496573">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="258" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597829577353" />
-    <state width="1867" height="258" key="GridCell.Tab.1.center" timestamp="1597829577353">
+    <state width="1867" height="258" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597892496573" />
+    <state width="1867" height="258" key="GridCell.Tab.1.center" timestamp="1597892496573">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="258" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597829577353" />
-    <state width="1867" height="258" key="GridCell.Tab.1.left" timestamp="1597829577353">
+    <state width="1867" height="258" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597892496573" />
+    <state width="1867" height="258" key="GridCell.Tab.1.left" timestamp="1597892496573">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="258" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597829577353" />
-    <state width="1867" height="258" key="GridCell.Tab.1.right" timestamp="1597829577353">
+    <state width="1867" height="258" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597892496573" />
+    <state width="1867" height="258" key="GridCell.Tab.1.right" timestamp="1597892496573">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="258" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597829577353" />
+    <state width="1867" height="258" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597892496573" />
+    <state width="1867" height="320" key="GridCell.Tab.2.bottom" timestamp="1597890861369">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="320" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597890861369" />
+    <state width="1867" height="320" key="GridCell.Tab.2.center" timestamp="1597890861369">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="320" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597890861369" />
+    <state width="1867" height="320" key="GridCell.Tab.2.left" timestamp="1597890861369">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="320" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597890861369" />
+    <state width="1867" height="320" key="GridCell.Tab.2.right" timestamp="1597890861369">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="320" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597890861369" />
     <state x="290" y="85" key="MergeDialog" timestamp="1597804074379">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="290" y="85" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597804074379" />
-    <state x="820" y="363" width="491" height="313" key="MultipleFileMergeDialog" timestamp="1597804076412">
+    <state x="820" y="363" width="491" height="313" key="MultipleFileMergeDialog" timestamp="1597830708814">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="820" y="363" width="491" height="313" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597804076412" />
+    <state x="820" y="363" width="491" height="313" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597830708814" />
     <state x="667" y="158" key="RollbackChangesDialog" timestamp="1597715503144">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -346,10 +369,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="347" y="78" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597717410193" />
-    <state x="490" y="142" width="1016" height="655" key="Vcs.Push.Dialog.v2" timestamp="1597804110710">
+    <state x="490" y="142" width="1016" height="655" key="Vcs.Push.Dialog.v2" timestamp="1597830801404">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="490" y="142" width="1016" height="655" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597804110710" />
+    <state x="490" y="142" width="1016" height="655" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597830801404" />
     <state x="743" y="418" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597804255976">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

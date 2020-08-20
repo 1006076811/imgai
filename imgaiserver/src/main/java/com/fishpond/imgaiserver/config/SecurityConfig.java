@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.LockedException;
+import org.springframework.security.config.annotation.ObjectPostProcessor;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -19,6 +20,7 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.session.SessionRegistryImpl;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.web.access.intercept.FilterSecurityInterceptor;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
@@ -37,7 +39,11 @@ import java.io.PrintWriter;
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
-    UserService userService;
+    private UserService userService;
+    @Autowired
+    private CustomFilterInvocationSecurityMataSource mataSource;
+    @Autowired
+    private CustomUrlDecisionManager decisionManager;
 
     //返回session注册器
     @Bean
@@ -112,7 +118,33 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.csrf().disable();
+        http.authorizeRequests().withObjectPostProcessor(new ObjectPostProcessor<FilterSecurityInterceptor>() {
+
+            @Override
+            public <O extends FilterSecurityInterceptor> O postProcess(O o) {
+                o.setAccessDecisionManager(decisionManager);
+                o.setSecurityMetadataSource(mataSource);
+                return o;
+            }
+        })
+                .and()
+                .logout().logoutUrl("/logout").permitAll()
+                .and()
+                .csrf().disable();
+
+        //将session策略添加进去
+        http.addFilterAt(new ConcurrentSessionFilter(sessionRegistry(), new SessionInformationExpiredStrategy() {
+            @Override
+            public void onExpiredSessionDetected(SessionInformationExpiredEvent event) throws IOException, ServletException {
+                HttpServletResponse response = event.getResponse();
+                response.setContentType("application/json;charset=utf-8");
+                response.setStatus(401);
+                PrintWriter writer = response.getWriter();
+                writer.write(new ObjectMapper().writeValueAsString(RespBean.error(401,"您已在另一台设备登录，本次登录已下线！",null)));
+                writer.flush();
+                writer.close();
+            }
+        }),ConcurrentSessionFilter.class);
         http.addFilterAt(this.loginFilter(), UsernamePasswordAuthenticationFilter.class);//将自定义的登录验证织入
     }
 }
