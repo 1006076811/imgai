@@ -22,7 +22,6 @@
     <list default="true" id="a91a1c45-2e5f-459a-a9e5-2003c02f2ef5" name="默认的" comment="更新后端:&#10;更新了Menu和MenuRole对应的Mapper和Service,&#10;若用户未设置name，则name自动初始化为username">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imgaiVue/imgaiVue/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgaiVue/imgaiVue/src/utils/AxiosApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/src/utils/AxiosApi.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +80,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="ts.external.directory.path" value="D:\Program Files\JetBrains\IntelliJ IDEA 2020.1.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RunManager" selected="Spring Boot.ImgaiserverApplication">
     <configuration name="ImgaiserverApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -133,7 +133,7 @@
       <workItem from="1597650740055" duration="469000" />
       <workItem from="1597651599263" duration="5058000" />
       <workItem from="1597710361149" duration="37878000" />
-      <workItem from="1597884095879" duration="10382000" />
+      <workItem from="1597884095879" duration="11058000" />
     </task>
     <task id="LOCAL-00001" summary="重构了项目目录，imgaiserver为后端，imgaivue为前端">
       <created>1597652701126</created>
@@ -261,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597893013503</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="更新前端:&#10;新增了Axios的工具方法，并且引入到main">
+      <created>1597894917961</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1597894917961</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,7 +303,8 @@
     <MESSAGE value="更新后端:&#10;更新了登录功能,自定义登录验证，以json的方式登录" />
     <MESSAGE value="更新后端:&#10;新增url动态权限处理，处理了允许匿名访问和url和高级会员才可以访问的url" />
     <MESSAGE value="更新后端:&#10;新增了注销和无访问权限的返回信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新后端:&#10;新增了注销和无访问权限的返回信息" />
+    <MESSAGE value="更新前端:&#10;新增了Axios的工具方法，并且引入到main" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新前端:&#10;新增了Axios的工具方法，并且引入到main" />
   </component>
   <component name="WindowStateProjectService">
     <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1597892374770">
