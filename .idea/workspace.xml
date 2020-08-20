@@ -21,7 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a91a1c45-2e5f-459a-a9e5-2003c02f2ef5" name="默认的" comment="更新后端:&#10;更新了Menu和MenuRole对应的Mapper和Service,&#10;若用户未设置name，则name自动初始化为username">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiserver/src/main/java/com/fishpond/imgaiserver/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgaiVue/imgaiVue/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgaiVue/imgaiVue/src/utils/AxiosApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/imgaiVue/imgaiVue/src/utils/AxiosApi.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +133,7 @@
       <workItem from="1597650740055" duration="469000" />
       <workItem from="1597651599263" duration="5058000" />
       <workItem from="1597710361149" duration="37878000" />
-      <workItem from="1597884095879" duration="8869000" />
+      <workItem from="1597884095879" duration="10382000" />
     </task>
     <task id="LOCAL-00001" summary="重构了项目目录，imgaiserver为后端，imgaivue为前端">
       <created>1597652701126</created>
@@ -253,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597892840999</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="更新后端:&#10;新增了注销和无访问权限的返回信息">
+      <created>1597893013503</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1597893013503</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,7 +295,8 @@
     <MESSAGE value="更新后端:&#10;更新了Menu和MenuRole对应的Mapper和Service,&#10;若用户未设置name，则name自动初始化为username" />
     <MESSAGE value="更新后端:&#10;更新了登录功能,自定义登录验证，以json的方式登录" />
     <MESSAGE value="更新后端:&#10;新增url动态权限处理，处理了允许匿名访问和url和高级会员才可以访问的url" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新后端:&#10;新增url动态权限处理，处理了允许匿名访问和url和高级会员才可以访问的url" />
+    <MESSAGE value="更新后端:&#10;新增了注销和无访问权限的返回信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新后端:&#10;新增了注销和无访问权限的返回信息" />
   </component>
   <component name="WindowStateProjectService">
     <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1597892374770">
@@ -298,6 +307,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="624" y="210" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597718670910" />
+    <state x="591" y="12" key="CommitChangelistDialog2" timestamp="1597894027144">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="591" y="12" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1597894027144" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1597715507901">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -310,38 +323,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="0" key="FileDocumentManager.FileCacheConflict/0.0.1920.1040@0.0.1920.1040" timestamp="1597740618227" />
-    <state width="1867" height="258" key="GridCell.Tab.0.bottom" timestamp="1597892496573">
+    <state width="1867" height="258" key="GridCell.Tab.0.bottom" timestamp="1597893061481">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="258" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597892496573" />
-    <state width="1867" height="258" key="GridCell.Tab.0.center" timestamp="1597892496573">
+    <state width="1867" height="258" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597893061481" />
+    <state width="1867" height="258" key="GridCell.Tab.0.center" timestamp="1597893061481">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="258" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597892496573" />
-    <state width="1867" height="258" key="GridCell.Tab.0.left" timestamp="1597892496572">
+    <state width="1867" height="258" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597893061481" />
+    <state width="1867" height="258" key="GridCell.Tab.0.left" timestamp="1597893061480">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="258" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597892496572" />
-    <state width="1867" height="258" key="GridCell.Tab.0.right" timestamp="1597892496573">
+    <state width="1867" height="258" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597893061480" />
+    <state width="1867" height="258" key="GridCell.Tab.0.right" timestamp="1597893061481">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="258" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597892496573" />
-    <state width="1867" height="258" key="GridCell.Tab.1.bottom" timestamp="1597892496573">
+    <state width="1867" height="258" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597893061481" />
+    <state width="1867" height="258" key="GridCell.Tab.1.bottom" timestamp="1597893061481">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="258" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597892496573" />
-    <state width="1867" height="258" key="GridCell.Tab.1.center" timestamp="1597892496573">
+    <state width="1867" height="258" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597893061481" />
+    <state width="1867" height="258" key="GridCell.Tab.1.center" timestamp="1597893061481">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="258" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597892496573" />
-    <state width="1867" height="258" key="GridCell.Tab.1.left" timestamp="1597892496573">
+    <state width="1867" height="258" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597893061481" />
+    <state width="1867" height="258" key="GridCell.Tab.1.left" timestamp="1597893061481">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="258" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597892496573" />
-    <state width="1867" height="258" key="GridCell.Tab.1.right" timestamp="1597892496573">
+    <state width="1867" height="258" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597893061481" />
+    <state width="1867" height="258" key="GridCell.Tab.1.right" timestamp="1597893061481">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="258" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597892496573" />
+    <state width="1867" height="258" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597893061481" />
     <state width="1867" height="320" key="GridCell.Tab.2.bottom" timestamp="1597890861369">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -374,18 +387,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="347" y="78" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597717410193" />
-    <state x="490" y="142" width="1016" height="655" key="Vcs.Push.Dialog.v2" timestamp="1597830801404">
+    <state x="490" y="142" width="1016" height="655" key="Vcs.Push.Dialog.v2" timestamp="1597893058346">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="490" y="142" width="1016" height="655" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597830801404" />
+    <state x="490" y="142" width="1016" height="655" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597893058346" />
     <state x="743" y="418" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597804255976">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="743" y="418" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597804255976" />
-    <state x="616" y="282" key="git4idea.merge.GitPullDialog" timestamp="1597804128502">
+    <state x="616" y="282" key="git4idea.merge.GitPullDialog" timestamp="1597894032556">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="282" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597804128502" />
+    <state x="616" y="282" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597894032556" />
     <state x="651" y="129" key="new project wizard" timestamp="1597651945674">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
